@@ -1,7 +1,6 @@
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
-
 async function getData() {
   try {
       // hetheya ek sure elli jebt mennou el API https://global-warming.org/
@@ -9,13 +8,13 @@ async function getData() {
       const data = await res.json();
       console.log(data);
 
-      
-      var x = data.result[100];
+      var rand = getRandomInt(1600);
+      var x = data.result[rand];
       console.log(x);
       console.log(45564);
 
       var parag = document.getElementById("temperature");
-      parag.innerHTML = "La temperature globale en l'annee 100 était de " x.land + "selon l'API de global warming.org";
+      parag.innerHTML = "La temperature globale en l'annee " + rand + " était de " + x.land + " selon l'API de global warming.org";
   } catch(err) {
       console.log(err);
   }
