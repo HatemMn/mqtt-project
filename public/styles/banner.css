@@ -1,3 +1,4 @@
+/*
 h1,
 p,
 a {
@@ -13,31 +14,16 @@ h1 {
 p {
     font-size: 1.1em;
     font-weight: bold;
-  /*    letter-spacing: 5px;yellow: ebdc4f  vert: 718512  white: f5f9f8*/
-}
-.banner {
-    width: 100%;
-    padding: 60px 0;
-    text-align: center;
-    color: #ffd700 ;
-    background-image: url("turtle2.png"); 
-   background-repeat: no-repeat;
-   background-size: 100% 120%;
+  /*    letter-spacing: 5px;yellow: ebdc4f  vert: 718512  white: f5f9f8
+} 
+*/
 
-
- }
-.btn-bgstroke {
-    font-size: 20px;
-    display: inline-block;
-    border: 1px solid white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 300;
-    margin-top: 30px;
-}
 .main-content {
     background-color: red;
+}
+
+.bigtitle {
+    margin: 0px;
 }
 
 

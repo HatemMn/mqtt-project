@@ -54,7 +54,6 @@ h1 {
  
 }
 
-/* Header/Blog Title */
 .header {
   padding: 30px;
   font-size: 40px;
@@ -62,42 +61,33 @@ h1 {
   background: white;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
 .leftcolumn {
   float: left;
   width: 75%;
 }
 
-/* Right column */
 .rightcolumn {
   float: left;
   width: 25%;
   padding-left: 20px;
 }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
 
-/* Add a card effect for articles */
+
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
+  border: 5px solid #99cc00;
+    border-radius: 3px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Footer */
 .footer {
   padding: 20px;
   text-align: center;
@@ -105,7 +95,6 @@ h1 {
   margin-top: 20px;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {
     width: 100%;

@@ -1,16 +1,24 @@
-const url = 'https://api.ambeedata.com/';
-
-let data = {
-  name: 'Sara'
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
 
-var request = new Request(url, {
-    method: 'POST',
-  //  body: data,
-    headers: new Headers()
-});
+async function getData() {
+  try {
+      // hetheya ek sure elli jebt mennou el API https://global-warming.org/
+      const res = await fetch('https://cors-anywhere.herokuapp.com/https://global-warming.org/api/temperature-api');
+      const data = await res.json();
+      console.log(data);
 
-fetch(request)
-.then(function(data) {
-    console.log(data);
-})
+      
+      var x = data.result[100];
+      console.log(x);
+      console.log(45564);
+
+      var parag = document.getElementById("temperature");
+      parag.innerHTML = "La temperature globale en l'annee 100 était de " x.land + "selon l'API de global warming.org";
+  } catch(err) {
+      console.log(err);
+  }
+}
+getData();
+         
