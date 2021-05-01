@@ -1,31 +1,23 @@
-/*
-h1,
-p,
-a {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-}
-h1 {
-    font-size: 2.8em;
-    padding: 10px 0;
-    font-weight: 800;
-}
-p {
-    font-size: 1.1em;
-    font-weight: bold;
-  /*    letter-spacing: 5px;yellow: ebdc4f  vert: 718512  white: f5f9f8
-} 
-*/
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 
-.main-content {
-    background-color: red;
+.banner_article {
+    height: 300px;
+    width: 100%;
+    padding: 0px;
+
 }
 
-.bigtitle {
-    margin: 0px;
-}
+.banner {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    color: #ebdc4f ;
+    background-image: url("turtle2.png"); 
+   background-repeat: no-repeat;
+   background-size: 100% 120%;
 
+
+ }
 
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
@@ -35,3 +27,6 @@ p {
    }
 
 }
+
+
+/*    letter-spacing: 5px;yellow: ebdc4f  vert: 718512  white: f5f9f8

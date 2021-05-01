@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 :root {
   --color-primary: #002626;
@@ -7,8 +7,8 @@
   --nav-duration: calc(var(--duration) / 4);
   --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
   --space: 1rem;
-  --font-primary: 'Helvetica', sans-serif;
-  --font-heading: 'Merriweather', serif;
+  --font-primary: 'Open Sans', sans-serif;
+  --font-heading: 'Open Sans', serif;
   --font-size: 1.125rem;
   --line-height: 1.5;
 }
@@ -78,8 +78,7 @@ h1 {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
-  border: 5px solid #99cc00;
-    border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .row:after {

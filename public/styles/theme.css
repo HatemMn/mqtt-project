@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+
 }
 body {
-  color:#aaaaaa;
-  background-image: url("../img/leaves.png");
+  color:black;
+  background-color: #f8f9fd ;
+
 }
 .greeting{
-  background-color:#99cc00;
+  background-color: #ebdc4f ;
   padding:7px ;
   text-align:left;
   height:  50px;
@@ -21,7 +22,7 @@ body {
 }
 
 .btn-group .button {
-  background-color: #99cc00;
+  background-color: #ebdc4f ;
   border: none;
   color: #292f36;
   font-weight: bold;
