@@ -30,7 +30,7 @@ p {
 @media only screen and (max-width:620px) {
   /* For mobile phones: */
   .banner {
-       background-image: url("turtleMobile.png");
+       background-image: url("../images/turtleMobile.png");
        background-size: 100% 100%;
    }
 
