@@ -98,7 +98,15 @@
 		<p>Our team - All rights reserved.</p>
   </footer>
   
+  <script>
+    const ws = new WebSocket("ws://localhost:8082");
 
+    ws.addEventListener("open", () => {
+        console.log("We are connected!");
+
+        ws.send(" hey, i m sending a message ")
+    });
+  </script>
   <script src="scripts/main.js"></script>
   <script src="scripts/fetchapi.js"></script>
   <script src="scripts/salma.js"></script>
