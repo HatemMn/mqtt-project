@@ -8,6 +8,8 @@ Salma Ezzina
 INDP2B
 
 Changelog du site :
+## Mises à jour semaine 3
+ajout du serveur node js et de la websocket
 
 ## Mises à jour semaine 3
 Ajouté un slideshow
