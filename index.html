@@ -101,8 +101,8 @@
   <script>
     const socket = new WebSocket('ws://localhost:8082'); 
     socket.addEventListener('open', function (event) { 
-    socket.send("Qu'est ce qu'une tortue"); 
-    console.log("Message from client: Qu'est ce qu'une tortue");
+    socket.send("Qu'est ce qu'une tortue ?"); 
+    console.log("Message from client: Qu'est ce qu'une tortue ?");
     }); 
 
     socket.addEventListener('message', function (event) { 

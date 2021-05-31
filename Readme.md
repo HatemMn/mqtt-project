@@ -9,8 +9,8 @@ INDP2B
 
 Changelog du site :
 ## Mises à jour semaine 4
-ajout du serveur node js et de la websocket
-correction de la WebSocket implémentation d'une propre réponse serveur.
+Ajout du serveur node js et de la websocket.
+Correction de la WebSocket implémentation d'une propre réponse serveur.
 
 ## Mises à jour semaine 3
 Ajouté un slideshow
