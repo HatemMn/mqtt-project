@@ -1,15 +1,10 @@
-const WebSocket = require("ws");
+const WebSocket = require('ws');
+const ws = new WebSocket.Server({ port: 8082 });
 
-const wss = new WebSocket.Server({ port: 8082});
+ws.on('connection', function connection(wsConnection) {
+  wsConnection.on('message', function incoming(message) {
+    console.log(`server received: ${message}`);
+  });
 
-wss.on("connection", ws => {
-	console.log("New client connected!");
-
-	ws.on("message", data => {
-		console.log('Client has sent us: $(data)' );
-	});
-
-	ws.on("close", () => {
-		console.log("Client has disconnected!");
-	});
+  wsConnection.send('Les Tortues (Testudines), ou Cheloniens, forment un ordre de reptiles dont la caracteristique est d avoir une carapace');
 });

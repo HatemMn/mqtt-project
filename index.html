@@ -78,7 +78,7 @@
               <h2>Le saviez vous ?</h2>
               <p id="temperature">Notre groupe, Hatem Wissal Achref Salma Iheb</p>
             </div>
-            
+   
             <div class="card">
               <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="146362/"></script>
             </div>
@@ -99,13 +99,20 @@
   </footer>
   
   <script>
-    const ws = new WebSocket("ws://localhost:8082");
+    const socket = new WebSocket('ws://localhost:8082'); 
+    socket.addEventListener('open', function (event) { 
+    socket.send("Qu'est ce qu'une tortue"); 
+    console.log("Message from client: Qu'est ce qu'une tortue");
+    }); 
 
-    ws.addEventListener("open", () => {
-        console.log("We are connected!");
-
-        ws.send(" hey, i m sending a message ")
+    socket.addEventListener('message', function (event) { 
+    console.log("Message from server : Les Tortues (Testudines), ou Chéloniens, forment un ordre de reptiles dont la caractéristique est d'avoir une carapace "); 
     });
+
+    socket.addEventListener('close', function (event) { 
+    console.log('The connection has been closed'); 
+    });
+    
   </script>
   <script src="scripts/main.js"></script>
   <script src="scripts/fetchapi.js"></script>
